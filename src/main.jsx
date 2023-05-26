@@ -1,14 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+//import App from './App.jsx'
 
-//const h1 = React.createElement('h1',null, React.createElement('ul', null, React.createElement('li', null, 'item 1')));
-const h1 = <div><ul><li>Hola Mundo</li></ul></div>;
+import { HelloWorld } from './components/HelloWorld'
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
-  h1
-  //<React.StrictMode>
-  //  <App />
-  //</React.StrictMode>,
+  <React.StrictMode>
+    <HelloWorld user={'Jose'} id='1' />
+  </React.StrictMode>,
 )
